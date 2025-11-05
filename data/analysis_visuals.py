@@ -2,12 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# 📂 Load cleaned dataset
+#Load cleaned dataset
 df = pd.read_csv(
     r"C:/Users/realm/OneDrive/Documents/Thuy One Drive/OneDrive/data_job_projects/flight_prediction_handlingdataset/original_dataset/business_cleaned.csv"
 )
 
-# 🧹 Clean 'price' column to numeric
+# Clean 'price' column to numeric
 df["price"] = (
     df["price"]
     .astype(str)
@@ -99,3 +99,4 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.savefig("chart4_cheapest_vs_expensive_routes.png", dpi=300, bbox_inches="tight")
 plt.show()
+
